@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Checkit</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <form id="form">
+      <h2 id="correct">Congratulation! You got it correct!</h2>
+      <h2 id="wrong">Incorrect</h2>
+      <h2 id="explanation">Explanation</h2>
+      <p id="button" class="button">Personal finance</p>
+      <p id="btn" class="button btn">European Geography/History</p>
+      <p id="btn2" class="button btn btn2">European Economic</p>
+      <a href="personal-finance"><div id="questions">
+        <div id="oh" class="oh">$100</div> 
+        <div id="sh" class="oh sh">$200</div> 
+        <div id="th" class="oh th">$300</div> 
+      </div>
+        </a>
+
+     <div class="hr1" id="hr1">.</div>
+     <div class="hr1" id="hr2">.</div>
+     <div class="hr1" id="hr3">.</div>
+     <div class="hr1" id="h1r4">.</div>
+     <div class="hr1" id="h1r5">.</div>
+     <div class="hr1" id="h1r6">.</div>
+     <div class="hr1" id="h2r7">.</div>
+     <div class="hr1" id="h2r8">.</div>
+     <div class="hr1" id="h2r9">.</div>
+
+      <a href="eu-geography-history"><div id="questions1">
+        <div id="oh1" class="oh">$100</div> 
+        <div id="sh1" class="oh sh sh1">$200</div> 
+        <div id="th1" class="oh th th1">$300</div> 
+      </div>
+        </a>
+
+
+      <a href="eu-economic"><div id="questions2">
+        <div id="oh2" class="oh">$100</div> 
+        <div id="sh2" class="oh sh1 sh2">$200</div> 
+        <div id="th2" class="oh th1 th2">$300</div> 
+      </div>
+        </a>
+      <div class="quiz-container" id="quiz-container">
+        <h1 class="quiz-title" id="quiz-title">Questions</h1>
+        <div class="choices-grid" id="choices-grid">
+          <button class="choice top-left" id="choiceTopLeft">1</button>
+          <button class="choice top-right" id="choiceTopRight">2</button>
+          <button class="choice bottom-left" id="choiceBottomLeft">3</button>
+          <button class="choice bottom-right" id="choiceBottomRight">4</button>
+          <button id="explain" type="button" class="explain">explanation</button>
+          <button id="explain1" type="button" class="explain explain1">explanation</button>
+          <button id="explain2" type="button" class="explain explain1 explain2">explanation</button>
+        </div>
+      </div>
+      <p id="score" class="score">Score: 0</p>
+    </form>
+    <div class="loading" id="loading">
+      <div class="spinner"></div>
+      loading...
+    </div>
+
+    <h1 class="quizT1" id="quizT1">You Won!</h1>
+    <h1 class="quizT1 quizt2" id="quizT2"><i class="fa-solid fa-spinner fa-spin"></i>Checking your score...</h1>
+    <p class="sorry quizT1" id="sorry">Sorry, but we're not done asking questions yet!</p>
+    <p class="secret score" id="secret">You need to earn secret points to win the game</p>
+    <script src="script.js"></script>
+    <script src="eu.js"></script>
+    <script src="economic.js"></script>
+  </body>
+</html>
