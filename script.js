@@ -40,7 +40,7 @@ const defaultQuestions = [
 const alternateQuestions = [
   {
    question: "Why do we need a budget?",
-   choices: ["We can kepp up with spending and income.", "budget is crucial because it allows us to experience the excitement of unplanned expenses.", "A budget is great because it makes financial surprises more thrilling.", "A budget is necessary because it helps us discover all the hidden costs we never knew existed."],
+   choices: ["We can keep up with spending and income.", "budget is crucial because it allows us to experience the excitement of unplanned expenses.", "A budget is great because it makes financial surprises more thrilling.", "A budget is necessary because it helps us discover all the hidden costs we never knew existed."],
    correct: 0,
    explanation: "A budget helps you manage your income and expenses, ensuring you have enough money to meet your needs and save for the future.",
   },
@@ -143,7 +143,7 @@ function loadRandomQuestion() {
     choiceBR.style.display = "none";
     correct.style.display = "none";
     wrong.style.display = "none";
-    explain.innerHTML = '<i class="fas fa-arrow-right"></i>';
+    explain.innerHTML = "explanation";
     return;
   }
 
@@ -261,7 +261,7 @@ function load1RandomQuestion1() {
     choiceBR.style.display = "none";
     correct.style.display = "none";
     wrong.style.display = "none";
-    explain.innerHTML = '<i class="fas fa-arrow-right"></i>';
+    explain.innerHTML = "explanation";
     return;
   }
 
@@ -381,7 +381,7 @@ function load1RandomQuestion2() {
     choiceBR.style.display = "none";
     correct.style.display = "none";
     wrong.style.display = "none";
-    explain.innerHTML = '<i class="fas fa-arrow-right"></i>';
+    explain.innerHTML = "explanation";
     return;
   }
 
