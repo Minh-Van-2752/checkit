@@ -66,6 +66,24 @@ body, html {
   translate: -390px -120px;
 }
 
+#quizT1{
+  animations: slide 2s;
+}
+
+@keyframes slide{
+0% {
+  transform: translateY(-10px);
+ }
+
+50% {
+  transform: translateY(15px);
+ }
+
+100% {
+  transform: translateY(-5px);
+ }
+}
+
 .quizt2{
   translate: -190px -120px;
 }
