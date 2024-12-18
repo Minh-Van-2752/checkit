@@ -68,16 +68,12 @@ body, html {
 }
 
 @keyframes slide{
-0% {
+from {
   transform: translateY(-20px);
  }
 
-50% {
+to {
   transform: translateY(25px);
- }
-
-100% {
-  transform: translateY(-3px);
  }
 }
 
