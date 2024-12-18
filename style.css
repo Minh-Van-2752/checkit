@@ -55,7 +55,7 @@ body, html {
 }
 
 .quizT1{
-  display: block;
+  display: none;
   font-size: 2.5rem; /* Tăng kích thước tiêu đề */
   justify-content: center;
   text-align: center;
