@@ -63,11 +63,11 @@ body, html {
   position: absolute;
   top: 50%;
   left: 50%;
-  translate: -150px -120px;
+  translate: -200px -120px;
 }
 
 .quizt2{
-  translate: -170px -120px;
+  translate: -190px -120px;
 }
 
 .btn{
