@@ -28,11 +28,37 @@ const defaultQuestions1 = [
       "There was no effect on the people that lived in Ukraine close to the power plant.",
       "people had developed diseases, such as leukemia and thyroid cancer, and Birth effect which cause deaths, loss of a baby, sickness.",
       "The Chernobyl never happened.",
-      " Chernobyl caused acid rain which killed people.",
+      "Chernobyl caused acid rain which killed people.",
     ],
     correct: 1,
     explanation:
-      "people had developed diseases, such as leukemia and thyroid cancer, and Birth effect which cause deaths, loss of a baby, sickness.",
+      "People had developed diseases, such as leukemia and thyroid cancer, and Birth effect which cause deaths, loss of a baby, sickness.",
+  },
+  {
+    question:
+      "Where is the Danube River located?",
+    choices: [
+      "The Danube River is located entirely in Italy.",
+      "The Danube River Central and East Europe.",
+      "The Danube River is located in South America.",
+      "The Danube flows exclusively through France.",
+    ],
+    correct: 1,
+    explanation:
+      "The Danube River flows through Central and Eastern Europe, passing through countries like Germany, Austria, Hungary, and Romania before reaching the Black Sea.",
+  },
+  {
+    question:
+      "Where is Portugal located?",
+    choices: [
+      "Portugal is located in South America",
+      "Portugal is located in the next to Iberean Peninsula.",
+      "Portugal is located in Africa, near Morocco.",
+      "Portugal is located in the Middle East, next to Saudi Arabia.",
+    ],
+    correct: 1,
+    explanation:
+      "Portugal is located on the Iberian Peninsula, in southwestern Europe, bordered by Spain to the east and north and the Atlantic Ocean to the west and south.",
   },
 ];
 
@@ -74,6 +100,20 @@ const alternateQuestions1 = [
     correct: 1,
     explanation:
       "Investing factories and technology increases GDP and GDP per capita in the UK, Germany, and Russia.",
+  },
+  {
+    question:
+      "How did the aftermath of WW1 cause the rise of communism as a result of the russian revolution, the treaty of versailles, the rise of nazism, and worldwide depression?
+",
+    choices: [
+      "The aftermath of WWI caused communism to rise because the Treaty of Versailles gave Russia more power and territory, which led to greater stability.",
+      "Russia became communist, Germany suffered after WWI, and economic troubles led to the rise of Nazis. The Great Depression made communism more appealing.",
+      "Communism grew after WWI because the worldwide depression made capitalist governments more powerful, leading to the spread of communism.",
+      "The aftermath of WWI caused communism to rise because the rise of Nazism in Germany inspired workers in Russia to demand more power.",
+    ],
+    correct: 1,
+    explanation:
+      "After WWI, Russia became communist due to the 1917 Russian Revolution, which was fueled by economic and social turmoil. Meanwhile, Germany's suffering from the war and the Treaty of Versailles, combined with the Great Depression, made communism more appealing and contributed to the rise of the Nazis.",
   },
 ];
 
@@ -240,7 +280,7 @@ function loadRandomQuestion1() {
         const h1r5 = document.querySelector("#h1r5");
         let h1r6 = document.querySelector("#h1r6");
         if (getComputedStyle(h1r4).display === "block") {
-          scoreValue += 50;
+          scoreValue += 25;
           score.textContent = `Score: ${scoreValue}`;
 
           explain.style.display = "none";
@@ -265,7 +305,7 @@ function loadRandomQuestion1() {
           score.textContent = `Score: ${scoreValue}`;
         }
 
-        if (scoreValue >= 900) {
+        if (scoreValue >= 1000) {
   if (questions1.style.display === "block") {
     form.style.display = "block";
     quizt2.style.display = "none";
@@ -275,9 +315,9 @@ function loadRandomQuestion1() {
     score.style.display = "block";
     secret.style.display = "none";
     setTimeout(() => {
-      if(scoreValue === 900) {
+      if(scoreValue === 1000) {
                 quizT1.textContent = "You score a total of 900 points! You Won the game!"
-              } else if (scoreValue >= 900){
+              } else if (scoreValue >= 1000){
                 quizT1.textContent = "You score over 900 points! You Won the game!"
               }
       quizT1.style.display = "block";
@@ -364,7 +404,7 @@ function loadRandom1Question1() {
         const h1r5 = document.querySelector("#h1r5");
         const h1r6 = document.querySelector("#h1r6");
         if (h1r4.style.display === "block") {
-          scoreValue += 50;
+          scoreValue += 25;
           score.textContent = `Score: ${scoreValue}`;
         } else {
           scoreValue += 0;
@@ -372,17 +412,11 @@ function loadRandom1Question1() {
         }
 
         if (h1r5.style.display === "block") {
-          scoreValue += 66;
+          scoreValue += 50;
           score.textContent = `Score: ${scoreValue}`;
         } else {
           scoreValue += 0;
           score.textContent = `Score: ${scoreValue}`;
-        }
-        if (
-          quizT.textContent ===
-          "What are some Causes of air pollution in the United Kingdom?"
-        ) {
-          scoreValue += 2;
         }
 
         if (h1r6.style.display === "block") {
@@ -393,7 +427,7 @@ function loadRandom1Question1() {
           score.textContent = `Score: ${scoreValue}`;
         }
 
-        if (scoreValue >= 900) {
+        if (scoreValue >= 1000) {
   if (questions1.style.display === "block") {
     form.style.display = "block";
     quizt2.style.display = "none";
@@ -403,9 +437,9 @@ function loadRandom1Question1() {
     score.style.display = "block";
     secret.style.display = "none";
     setTimeout(() => {
-      if(scoreValue === 900) {
+      if(scoreValue === 1000) {
                 quizT1.textContent = "You score a total of 900 points! You Won the game!"
-              } else if (scoreValue >= 900){
+              } else if (scoreValue >= 1000){
                 quizT1.textContent = "You score over 900 points! You Won the game!"
               }
       quizT1.style.display = "block";
@@ -520,7 +554,7 @@ function loadRandom1Question3() {
           score.textContent = `Score: ${scoreValue}`;
         }
 
-        if (scoreValue >= 900) {
+        if (scoreValue >= 1000) {
   if (questions1.style.display === "block") {
     form.style.display = "block";
     quizt2.style.display = "none";
@@ -530,9 +564,9 @@ function loadRandom1Question3() {
     score.style.display = "block";
     secret.style.display = "none";
     setTimeout(() => {
-      if(scoreValue === 900) {
+      if(scoreValue === 1000) {
                 quizT1.textContent = "You score a total of 900 points! You Won the game!"
-              } else if (scoreValue >= 900){
+              } else if (scoreValue >= 1000){
                 quizT1.textContent = "You score over 900 points! You Won the game!"
               }
       quizT1.style.display = "block";
