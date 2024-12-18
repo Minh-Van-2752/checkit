@@ -214,7 +214,7 @@ function loadRandomQuestion() {
           score.textContent = `Score: ${scoreValue}`;
         }
 
-        if (scoreValue >= 900) {
+        if (scoreValue >= 1000) {
           if (questions1.style.display === "block") {
             form.style.display = "block";
             quizt2.style.display = "none";
@@ -223,9 +223,9 @@ function loadRandomQuestion() {
             quizt2.style.display = "block";
             score.style.display = "block";
             setTimeout(() => {
-              if(scoreValue === 900) {
+              if(scoreValue === 1000) {
                 quizT1.textContent = "You score a total of 900 points! You Won the game!";
-              } else if (scoreValue >= 900){
+              } else if (scoreValue >= 1000){
                 quizT1.textContent = "You score over 900 points! You Won the game!";
               }
               quizT1.style.display = "block";
@@ -332,7 +332,7 @@ function load1RandomQuestion1() {
           score.textContent = `Score: ${scoreValue}`;
         }
 
-        if (scoreValue >= 900) {
+        if (scoreValue >= 1000) {
           if (questions1.style.display === "block") {
             form.style.display = "block";
             quizt2.style.display = "none";
@@ -341,9 +341,9 @@ function load1RandomQuestion1() {
             quizt2.style.display = "block";
             score.style.display = "block";
             setTimeout(() => {
-              if(scoreValue === 900) {
+              if(scoreValue === 1000) {
                 quizT1.textContent = "You score a total of 900 points! You Won the game!";
-              } else if (scoreValue >= 900){
+              } else if (scoreValue >= 1000){
                 quizT1.textContent = "You score over 900 points! You Won the game!";
               }
               quizT1.style.display = "block";
@@ -452,7 +452,7 @@ function load1RandomQuestion2() {
           score.textContent = `Score: ${scoreValue}`;
         }
 
-        if (scoreValue >= 900) {
+        if (scoreValue >= 1000) {
           if (questions1.style.display === "block") {
             form.style.display = "block";
             quizt2.style.display = "none";
@@ -461,9 +461,9 @@ function load1RandomQuestion2() {
             quizt2.style.display = "block";
             score.style.display = "block";
             setTimeout(() => {
-              if(scoreValue === 900) {
+              if(scoreValue === 1000) {
                 quizT1.textContent = "You score a total of 900 points! You Won the game!";
-              } else if (scoreValue >= 900){
+              } else if (scoreValue >= 1000){
                 quizT1.textContent = "You score over 900 points! You Won the game!";
               }
               quizT1.style.display = "block";
