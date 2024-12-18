@@ -277,7 +277,7 @@ function loadRandomQuestion1() {
     setTimeout(() => {
       if(scoreValue === 900) {
                 quizT1.textContent = "You score a total of 900 points! You Won the game!"
-              } else if (scoreValue <= 900){
+              } else if (scoreValue >= 900){
                 quizT1.textContent = "You score over 900 points! You Won the game!"
               }
       quizT1.style.display = "block";
@@ -405,7 +405,7 @@ function loadRandom1Question1() {
     setTimeout(() => {
       if(scoreValue === 900) {
                 quizT1.textContent = "You score a total of 900 points! You Won the game!"
-              } else if (scoreValue <= 900){
+              } else if (scoreValue >= 900){
                 quizT1.textContent = "You score over 900 points! You Won the game!"
               }
       quizT1.style.display = "block";
@@ -532,9 +532,9 @@ function loadRandom1Question3() {
     setTimeout(() => {
       if(scoreValue === 900) {
                 quizT1.textContent = "You score a total of 900 points! You Won the game!"
-              } else if (scoreValue <= 900){
+              } else if (scoreValue >= 900){
                 quizT1.textContent = "You score over 900 points! You Won the game!"
-              } 
+              }
       quizT1.style.display = "block";
       quizt2.style.display = "none";
       score.style.display = "block";
