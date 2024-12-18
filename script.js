@@ -28,12 +28,28 @@ let secret = document.getElementById("secret");
 
 // Initial questions set
 const defaultQuestions = [
-  
+  {
+    question: "If you put your money into your bank account, what is it called?",
+    choices: ["Financial donation", "Future spending fund", "Deposit", "Savings"],
+    correct: 2,
+    explanation: 'The correct term for putting money into your bank account is "deposit" When you deposit money, it’s added to your account balance, allowing you to store funds for future use.',
+  },
 ];
 
 // Second set of questions
 const alternateQuestions = [
-  
+  {
+   question: "Why do we need a budget?",
+   choices: ["We can kepp up with spending and income.", "budget is crucial because it allows us to experience the excitement of unplanned expenses.", "A budget is great because it makes financial surprises more thrilling.", "A budget is necessary because it helps us discover all the hidden costs we never knew existed."],
+   correct: 0,
+   explanation: "A budget helps you manage your income and expenses, ensuring you have enough money to meet your needs and save for the future.",
+  },
+  {
+  question: "What is a benefit of money management?",
+  choices: ["It will be help with future purchases.", "Money management lets you splurge endlessly without worrying about running out of money.", "Money management means you never have to track your expenses because you'll always have enough money.", "With good money management, you can avoid saving altogether and still achieve financial freedom."],
+  correct: 0,
+  explanation: '"It will help with future purchases" is correct because money management ensures you save for goals, avoid debt, and stay financially prepared for planned or unexpected expenses.',
+  },
 ];
 
 const thirdQuestions = [
@@ -123,7 +139,7 @@ function loadRandomQuestion() {
     choiceTR.style.display = "none";
     choiceBL.style.display = "none";
     btn.style.display = "none";
-    sry.style.display = "block";
+    sry.style.display = "none";
     choiceBR.style.display = "none";
     correct.style.display = "none";
     wrong.style.display = "none";
@@ -175,7 +191,7 @@ function loadRandomQuestion() {
         const hr3 = document.querySelector("#hr3"); // Select the element by ID
         if (getComputedStyle(hr1).display === "block") {
           explain.disabled = false;
-          scoreValue += 33;
+          scoreValue += 100;
           score.textContent = `Score: ${scoreValue}`;
         } else {
           scoreValue += 0;
@@ -241,7 +257,7 @@ function load1RandomQuestion1() {
     choiceTR.style.display = "none";
     choiceBL.style.display = "none";
     btn.style.display = "none";
-    sry.style.display = "block";
+    sry.style.display = "none";
     choiceBR.style.display = "none";
     correct.style.display = "none";
     wrong.style.display = "none";
@@ -301,7 +317,7 @@ function load1RandomQuestion1() {
         }
 
         if (getComputedStyle(hr2).display === "block") {
-          scoreValue += 33;
+          scoreValue += 100;
           score.textContent = `Score: ${scoreValue}`;
         } else {
           scoreValue += 0;
@@ -429,7 +445,7 @@ function load1RandomQuestion2() {
         }
 
         if (getComputedStyle(hr3).display === "block") {
-          scoreValue += 33;
+          scoreValue += 0;
           score.textContent = `Score: ${scoreValue}`;
         } else {
           scoreValue += 0;
