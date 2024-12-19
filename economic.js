@@ -114,6 +114,9 @@ function loadRandom2Question1() {
     choiceBR.style.display = "none";
     correct.style.display = "none";
     wrong.style.display = "none";
+    if(quizT.textContent === "Questions Completed!"){
+      quizT.style.top = "65px";
+    }
     return;
   }
   const randomIndex = Math.floor(Math.random() * unused2Questions2.length);
@@ -178,7 +181,7 @@ function loadRandom2Question1() {
           score.textContent = `Score: ${scoreValue}`;
         }
 
-        if (scoreValue >= 900) {
+        if (scoreValue >= 1000) {
           if (questions1.style.display === "block") {
             form.style.display = "block";
             quizt2.style.display = "none";
@@ -187,10 +190,10 @@ function loadRandom2Question1() {
             quizt2.style.display = "block";
             score.style.display = "block";
             setTimeout(() => {
-              if(scoreValue === 900) {
-                quizT1.textContent = "You score a total of 900 points! You Won the game!"
-              } else if (scoreValue >= 900){
-                quizT1.textContent = "You score over 900 points! You Won the game!"
+              if(scoreValue === 1000) {
+                quizT1.textContent = "You score a total of 1000 points! You Won the game!";
+              } else if (scoreValue >= 1000){
+                quizT1.textContent = "You score over 1000 points! You Won the game!";
               }
               quizT1.style.display = "block";
               quizt2.style.display = "none";
@@ -225,6 +228,9 @@ function loadRandom2Question2() {
     choiceBR.style.display = "none";
     correct.style.display = "none";
     wrong.style.display = "none";
+    if(quizT.textContent === "Questions Completed!"){
+      quizT.style.top = "65px";
+    }
     return;
   }
   const randomIndex = Math.floor(Math.random() * unused2Questions3.length);
@@ -289,7 +295,7 @@ function loadRandom2Question2() {
           score.textContent = `Score: ${scoreValue}`;
         }
 
-        if (scoreValue >= 900) {
+        if (scoreValue >= 1000) {
           if (questions1.style.display === "block") {
             form.style.display = "block";
             quizt2.style.display = "none";
@@ -298,10 +304,10 @@ function loadRandom2Question2() {
             quizt2.style.display = "block";
             score.style.display = "block";
             setTimeout(() => {
-              if(scoreValue === 900) {
-                quizT1.textContent = "You score a total of 900 points! You Won the game!"
-              } else if (scoreValue >= 900){
-                quizT1.textContent = "You score over 900 points! You Won the game!"
+              if(scoreValue === 1000) {
+                quizT1.textContent = "You score a total of 1000 points! You Won the game!";
+              } else if (scoreValue >= 1000){
+                quizT1.textContent = "You score over 1000 points! You Won the game!";
               }
               quizT1.style.display = "block";
               score.style.display = "block";
@@ -336,6 +342,9 @@ function loadRandom2Question3() {
     choiceBR.style.display = "none";
     correct.style.display = "none";
     wrong.style.display = "none";
+    if(quizT.textContent === "Questions Completed!"){
+      quizT.style.top = "65px";
+    }
     return;
   }
   const randomIndex = Math.floor(Math.random() * unused2Questions4.length);
@@ -400,7 +409,7 @@ function loadRandom2Question3() {
           score.textContent = `Score: ${scoreValue}`;
         }
 
-        if (scoreValue >= 900) {
+        if (scoreValue >= 1000) {
           if (questions1.style.display === "block") {
             form.style.display = "block";
             quizt2.style.display = "none";
@@ -409,10 +418,10 @@ function loadRandom2Question3() {
             quizt2.style.display = "block";
             score.style.display = "block";
             setTimeout(() => {
-              if(scoreValue === 900) {
-                quizT1.textContent = "You score a total of 900 points! You Won the game!"
-              } else if (scoreValue >= 900){
-                quizT1.textContent = "You score over 900 points! You Won the game!"
+              if(scoreValue === 1000) {
+                quizT1.textContent = "You score a total of 1000 points! You Won the game!";
+              } else if (scoreValue >= 1000){
+                quizT1.textContent = "You score over 1000 points! You Won the game!";
               }
               quizT1.style.display = "block";
               quizt2.style.display = "none";
@@ -646,7 +655,6 @@ function show1It2() {
 oh2.addEventListener("click", show2It); // Bộ câu hỏi mặc định
 sh2.addEventListener("click", show2That); // Bộ câu hỏi alternateQuestions2
 th2.addEventListener("click", show2It1); // Bộ câu hỏi thirdQuestions2
-
 
 questions2.addEventListener("click", function() {
 window.history.pushState(null, "European Union Economic", "/Eu-economic");
