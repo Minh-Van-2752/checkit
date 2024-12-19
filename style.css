@@ -173,7 +173,7 @@ body, html {
 .explain {
   position: absolute;
   top: 0;
-  translate: -63px -215px;
+  translate: -63px -220px;
   left: 50%;
   background: none;
   background-color: transparent;
@@ -253,7 +253,7 @@ form{
   font-size: 2.5rem; /* Tăng kích thước tiêu đề */
   margin-bottom: 10px; /* Khoảng cách giữa tiêu đề và nút */
   position: absolute;
-  top: 52px;
+  top: 60px;
 }
 
 /* Choices grid layout */
@@ -263,7 +263,7 @@ form{
   grid-template-rows: 1fr 1fr; /* 2 hàng */
   gap: 15px; /* Khoảng cách nhỏ hơn giữa các nút */
   width: 98vw; /* Gần sát viền trái/phải hơn */
-  height: 60vh;
+  height: 58vh;
   justify-content: flex-end;
   position: absolute;
   bottom: 50px;
