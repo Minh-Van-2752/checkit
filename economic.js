@@ -181,7 +181,7 @@ function loadRandom2Question1() {
           score.textContent = `Score: ${scoreValue}`;
         }
 
-        if (scoreValue >= 1000) {
+        if (scoreValue >= 1200) {
           if (questions1.style.display === "block") {
             form.style.display = "block";
             quizt2.style.display = "none";
@@ -190,10 +190,10 @@ function loadRandom2Question1() {
             quizt2.style.display = "block";
             score.style.display = "block";
             setTimeout(() => {
-              if(scoreValue === 1000) {
-                quizT1.textContent = "You score a total of 1000 points! You Won the game!";
-              } else if (scoreValue >= 1000){
-                quizT1.textContent = "You score over 1000 points! You Won the game!";
+              if(scoreValue === 1200) {
+                quizT1.textContent = "You score a total of 1200 points! You Won the game!";
+              } else if (scoreValue >= 1200){
+                quizT1.textContent = "You score over 1200 points! You Won the game!";
               }
               quizT1.style.display = "block";
               quizt2.style.display = "none";
@@ -228,6 +228,7 @@ function loadRandom2Question2() {
     choiceBR.style.display = "none";
     correct.style.display = "none";
     wrong.style.display = "none";
+    explain.style.boxShadow = "0 6px 16px rgba(0, 0, 0, 0.1)";
     if(quizT.textContent === "Questions Completed!"){
       quizT.style.top = "65px";
     }
@@ -295,7 +296,7 @@ function loadRandom2Question2() {
           score.textContent = `Score: ${scoreValue}`;
         }
 
-        if (scoreValue >= 1000) {
+        if (scoreValue >= 1200) {
           if (questions1.style.display === "block") {
             form.style.display = "block";
             quizt2.style.display = "none";
@@ -304,14 +305,14 @@ function loadRandom2Question2() {
             quizt2.style.display = "block";
             score.style.display = "block";
             setTimeout(() => {
-              if(scoreValue === 1000) {
-                quizT1.textContent = "You score a total of 1000 points! You Won the game!";
-              } else if (scoreValue >= 1000){
-                quizT1.textContent = "You score over 1000 points! You Won the game!";
+              if(scoreValue === 1200) {
+                quizT1.textContent = "You score a total of 1200 points! You Won the game!";
+              } else if (scoreValue >= 1200){
+                quizT1.textContent = "You score over 1200 points! You Won the game!";
               }
               quizT1.style.display = "block";
-              score.style.display = "block";
               quizt2.style.display = "none";
+              score.style.display = "block";
             }, 1000);
           }
         }
@@ -342,6 +343,7 @@ function loadRandom2Question3() {
     choiceBR.style.display = "none";
     correct.style.display = "none";
     wrong.style.display = "none";
+    explain.style.boxShadow = "0 6px 16px rgba(0, 0, 0, 0.1)";
     if(quizT.textContent === "Questions Completed!"){
       quizT.style.top = "65px";
     }
@@ -409,7 +411,7 @@ function loadRandom2Question3() {
           score.textContent = `Score: ${scoreValue}`;
         }
 
-        if (scoreValue >= 1000) {
+        if (scoreValue >= 1200) {
           if (questions1.style.display === "block") {
             form.style.display = "block";
             quizt2.style.display = "none";
@@ -418,10 +420,10 @@ function loadRandom2Question3() {
             quizt2.style.display = "block";
             score.style.display = "block";
             setTimeout(() => {
-              if(scoreValue === 1000) {
-                quizT1.textContent = "You score a total of 1000 points! You Won the game!";
-              } else if (scoreValue >= 1000){
-                quizT1.textContent = "You score over 1000 points! You Won the game!";
+              if(scoreValue === 1200) {
+                quizT1.textContent = "You score a total of 1200 points! You Won the game!";
+              } else if (scoreValue >= 1200){
+                quizT1.textContent = "You score over 1200 points! You Won the game!";
               }
               quizT1.style.display = "block";
               quizt2.style.display = "none";
