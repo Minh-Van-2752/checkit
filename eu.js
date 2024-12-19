@@ -809,7 +809,7 @@ th1.addEventListener("click", show1It1); // Bộ câu hỏi thirdQuestions1
 loading.style.display = "block";
 
 questions1.addEventListener("click", function() {
-window.history.pushState(null, "European Union Geography/History", "/Eu-geography-history");
+window.history.pushState(null, "European Union Geography/History", "/eu-geography-history");
 });
 
 explain1.addEventListener("click", function() {
