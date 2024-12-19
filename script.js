@@ -133,7 +133,7 @@ let currentIncorrectIndex = 0;
 
 function loadRandomQuestion() {
   if (unusedQuestions.length === 0) {
-    quizT.textContent = "Making questions...";
+    quizT.textContent = "Questions Completed!";
     choiceTL.style.display = "none";
     explain.style.display = "block";
     choiceTR.style.display = "none";
@@ -144,6 +144,9 @@ function loadRandomQuestion() {
     correct.style.display = "none";
     wrong.style.display = "none";
     explain.innerHTML = "explanation";
+    if(quizT.textContent === "Questions Completed!"){
+      quizT.style.top = "65px";
+    }
     return;
   }
 
@@ -224,9 +227,9 @@ function loadRandomQuestion() {
             score.style.display = "block";
             setTimeout(() => {
               if(scoreValue === 1000) {
-                quizT1.textContent = "You score a total of 900 points! You Won the game!";
+                quizT1.textContent = "You score a total of 1000 points! You Won the game!";
               } else if (scoreValue >= 1000){
-                quizT1.textContent = "You score over 900 points! You Won the game!";
+                quizT1.textContent = "You score over 1000 points! You Won the game!";
               }
               quizT1.style.display = "block";
               quizt2.style.display = "none";
@@ -235,14 +238,14 @@ function loadRandomQuestion() {
           }
         }
         setTimeout(() => {
-          load1RandomQuestion1();
+          loadRandomQuestion();
         }, 1000);
       } else {
         choice.style.backgroundColor = "#f23a3a";
         wrong.style.display = "block";
         incorrectQuestions.push(randomQuestion);
         setTimeout(() => {
-          load1RandomQuestion1();
+          loadRandomQuestion();
         }, 1000);
      }
    };
@@ -251,7 +254,7 @@ function loadRandomQuestion() {
 
 function load1RandomQuestion1() {
   if (unusedQuestions1.length === 0) {
-    quizT.textContent = "Making questions...";
+    quizT.textContent = "Questions Completed!";
     choiceTL.style.display = "none";
     explain.style.display = "block";
     choiceTR.style.display = "none";
@@ -262,6 +265,9 @@ function load1RandomQuestion1() {
     correct.style.display = "none";
     wrong.style.display = "none";
     explain.innerHTML = "explanation";
+    if(quizT.textContent === "Questions Completed!"){
+      quizT.style.top = "65px";
+    }
     return;
   }
 
@@ -309,7 +315,7 @@ function load1RandomQuestion1() {
         const hr3 = document.querySelector("#hr3"); // Select the element by ID
         if (getComputedStyle(hr1).display === "block") {
           explain.disabled = false;
-          scoreValue += 33;
+          scoreValue += 0;
           score.textContent = `Score: ${scoreValue}`;
         } else {
           scoreValue += 0;
@@ -342,9 +348,9 @@ function load1RandomQuestion1() {
             score.style.display = "block";
             setTimeout(() => {
               if(scoreValue === 1000) {
-                quizT1.textContent = "You score a total of 900 points! You Won the game!";
+                quizT1.textContent = "You score a total of 1000 points! You Won the game!";
               } else if (scoreValue >= 1000){
-                quizT1.textContent = "You score over 900 points! You Won the game!";
+                quizT1.textContent = "You score over 1000 points! You Won the game!";
               }
               quizT1.style.display = "block";
               quizt2.style.display = "none";
@@ -371,7 +377,7 @@ function load1RandomQuestion1() {
 
 function load1RandomQuestion2() {
   if (unusedQuestions2.length === 0) {
-    quizT.textContent = "Making questions...";
+    quizT.textContent = "Questions Completed!";
     choiceTL.style.display = "none";
     explain.style.display = "block";
     choiceTR.style.display = "none";
@@ -382,6 +388,9 @@ function load1RandomQuestion2() {
     correct.style.display = "none";
     wrong.style.display = "none";
     explain.innerHTML = "explanation";
+    if(quizT.textContent === "Questions Completed!"){
+      quizT.style.top = "65px";
+    }
     return;
   }
 
@@ -429,7 +438,7 @@ function load1RandomQuestion2() {
         const hr3 = document.querySelector("#hr3"); // Select the element by ID
         if (getComputedStyle(hr1).display === "block") {
           explain.disabled = false;
-          scoreValue += 33;
+          scoreValue += 0;
           score.textContent = `Score: ${scoreValue}`;
         } else {
           scoreValue += 0;
@@ -462,9 +471,9 @@ function load1RandomQuestion2() {
             score.style.display = "block";
             setTimeout(() => {
               if(scoreValue === 1000) {
-                quizT1.textContent = "You score a total of 900 points! You Won the game!";
+                quizT1.textContent = "You score a total of 1000 points! You Won the game!";
               } else if (scoreValue >= 1000){
-                quizT1.textContent = "You score over 900 points! You Won the game!";
+                quizT1.textContent = "You score over 1000 points! You Won the game!";
               }
               quizT1.style.display = "block";
               quizt2.style.display = "none";
