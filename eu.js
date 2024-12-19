@@ -307,28 +307,26 @@ function loadRandomQuestion1() {
           score.textContent = `Score: ${scoreValue}`;
         }
 
-        if (scoreValue >= 1000) {
-  if (questions1.style.display === "block") {
-    form.style.display = "block";
-    quizt2.style.display = "none";
-  } else {
-    form.style.display = "none";
-    quizt2.style.display = "block";
-    score.style.display = "block";
-    secret.style.display = "none";
-    setTimeout(() => {
-      if(scoreValue === 1000) {
-                quizT1.textContent = "You score a total of 1000 points! You Won the game!";
-              } else if (scoreValue >= 1000){
-                quizT1.textContent = "You score over 1000 points! You Won the game!";
+        if (scoreValue >= 1200) {
+          if (questions1.style.display === "block") {
+            form.style.display = "block";
+            quizt2.style.display = "none";
+          } else {
+            form.style.display = "none";
+            quizt2.style.display = "block";
+            score.style.display = "block";
+            setTimeout(() => {
+              if(scoreValue === 1200) {
+                quizT1.textContent = "You score a total of 1200 points! You Won the game!";
+              } else if (scoreValue >= 1200){
+                quizT1.textContent = "You score over 1200 points! You Won the game!";
               }
-      quizT1.style.display = "block";
-      quizt2.style.display = "none";
-      score.style.display = "block";
-    secret.style.display = "none";
-    }, 1000);
-  }
-}
+              quizT1.style.display = "block";
+              quizt2.style.display = "none";
+              score.style.display = "block";
+            }, 1000);
+          }
+        }
         
 
         setTimeout(() => {
@@ -432,28 +430,26 @@ function loadRandom1Question1() {
           score.textContent = `Score: ${scoreValue}`;
         }
 
-        if (scoreValue >= 1000) {
-  if (questions1.style.display === "block") {
-    form.style.display = "block";
-    quizt2.style.display = "none";
-  } else {
-    form.style.display = "none";
-    quizt2.style.display = "block";
-    score.style.display = "block";
-    secret.style.display = "none";
-    setTimeout(() => {
-      if(scoreValue === 1000) {
-                quizT1.textContent = "You score a total of 1000 points! You Won the game!";
-              } else if (scoreValue >= 1000){
-                quizT1.textContent = "You score over 1000 points! You Won the game!";
+        if (scoreValue >= 1200) {
+          if (questions1.style.display === "block") {
+            form.style.display = "block";
+            quizt2.style.display = "none";
+          } else {
+            form.style.display = "none";
+            quizt2.style.display = "block";
+            score.style.display = "block";
+            setTimeout(() => {
+              if(scoreValue === 1200) {
+                quizT1.textContent = "You score a total of 1200 points! You Won the game!";
+              } else if (scoreValue >= 1200){
+                quizT1.textContent = "You score over 1200 points! You Won the game!";
               }
-      quizT1.style.display = "block";
-      quizt2.style.display = "none";
-      score.style.display = "block";
-    secret.style.display = "none";
-    }, 1000);
-  }
-}
+              quizT1.style.display = "block";
+              quizt2.style.display = "none";
+              score.style.display = "block";
+            }, 1000);
+          }
+        }
 
 
         setTimeout(() => {
@@ -562,29 +558,26 @@ function loadRandom1Question3() {
           score.textContent = `Score: ${scoreValue}`;
         }
 
-        if (scoreValue >= 1000) {
-  if (questions1.style.display === "block") {
-    form.style.display = "block";
-    quizt2.style.display = "none";
-  } else {
-    form.style.display = "none";
-    quizt2.style.display = "block";
-    score.style.display = "block";
-    secret.style.display = "none";
-    setTimeout(() => {
-      if(scoreValue === 1000) {
-                quizT1.textContent = "You score a total of 1000 points! You Won the game!";
-              } else if (scoreValue >= 1000){
-                quizT1.textContent = "You score over 1000 points! You Won the game!";
+        if (scoreValue >= 1200) {
+          if (questions1.style.display === "block") {
+            form.style.display = "block";
+            quizt2.style.display = "none";
+          } else {
+            form.style.display = "none";
+            quizt2.style.display = "block";
+            score.style.display = "block";
+            setTimeout(() => {
+              if(scoreValue === 1200) {
+                quizT1.textContent = "You score a total of 1200 points! You Won the game!";
+              } else if (scoreValue >= 1200){
+                quizT1.textContent = "You score over 1200 points! You Won the game!";
               }
-      quizT1.style.display = "block";
-      quizt2.style.display = "none";
-      score.style.display = "block";
-    secret.style.display = "none";
-    }, 1000);
-  }
-}
-
+              quizT1.style.display = "block";
+              quizt2.style.display = "none";
+              score.style.display = "block";
+            }, 1000);
+          }
+        }
         setTimeout(() => {
           loadRandom1Question3();
         }, 1000);
