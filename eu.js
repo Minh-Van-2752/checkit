@@ -357,6 +357,7 @@ function loadRandom1Question1() {
     choiceBR.style.display = "none";
     correct.style.display = "none";
     wrong.style.display = "none";
+    explain.style.boxShadow = "0 6px 16px rgba(0, 0, 0, 0.1)";
     explain1.innerHTML = "explanation";
     if(quizT.textContent === "Questions Completed!"){
       quizT.style.top = "65px";
@@ -480,6 +481,7 @@ function loadRandom1Question3() {
     choiceBR.style.display = "none";
     correct.style.display = "none";
     wrong.style.display = "none";
+    explain.style.boxShadow = "0 6px 16px rgba(0, 0, 0, 0.1)";
     explain1.innerHTML = "explanation";
     if(quizT.textContent === "Questions Completed!"){
       quizT.style.top = "65px";
