@@ -388,6 +388,7 @@ function load1RandomQuestion2() {
     choiceBR.style.display = "none";
     correct.style.display = "none";
     wrong.style.display = "none";
+    explain.style.boxShadow = "0 6px 16px rgba(0, 0, 0, 0.1)";
     explain.innerHTML = "explanation";
     if(quizT.textContent === "Questions Completed!"){
       quizT.style.top = "65px";
