@@ -1,7 +1,7 @@
 body, html {
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
     "Lucida Sans", Arial, sans-serif;
-  text-direction: none;
+  text-decoration: none;
 }
 
 .hr1{
@@ -35,7 +35,7 @@ body, html {
 }
 
 #sorry{
-  translate: -330px -230px;
+  translate: -260px -220px;
   font-size: 25px;
 }
 
@@ -63,25 +63,11 @@ body, html {
   position: absolute;
   top: 50%;
   left: 50%;
-  translate: -390px -120px;
+  translate: -80px -120px;
 }
 
-/*@keyframes slide{
-0% {
-  transform: translateY(-20px);
- }
-
-50% {
-  transform: translateY(25px);
- }
-
-  100% {
-    transform: translateY(0);
-  }
-}*/
-
 .quizt2{
-  translate: -190px -120px;
+  translate: -140px -120px;
 }
 
 .btn{
@@ -267,7 +253,7 @@ form{
   font-size: 2.5rem; /* Tăng kích thước tiêu đề */
   margin-bottom: 10px; /* Khoảng cách giữa tiêu đề và nút */
   position: absolute;
-  top: 65px;
+  top: 50px;
 }
 
 /* Choices grid layout */
@@ -277,7 +263,7 @@ form{
   grid-template-rows: 1fr 1fr; /* 2 hàng */
   gap: 15px; /* Khoảng cách nhỏ hơn giữa các nút */
   width: 98vw; /* Gần sát viền trái/phải hơn */
-  height: 65vh;
+  height: 62vh;
   justify-content: flex-end;
   position: absolute;
   bottom: 50px;
