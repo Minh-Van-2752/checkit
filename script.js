@@ -728,7 +728,7 @@ form.addEventListener("click", function(event) {
   event.preventDefault();
 });
 questions.addEventListener("click", function() {
-window.history.pushState(null, "Personal Finance", "/Personal-finance");
+window.history.pushState(null, "Personal Finance", "/personal-finance");
 });
 
 explain.addEventListener("click", function() {
