@@ -173,7 +173,7 @@ body, html {
 .explain {
   position: absolute;
   top: 0;
-  translate: -63px -210px;
+  translate: -63px -215px;
   left: 50%;
   background: none;
   background-color: transparent;
@@ -253,7 +253,7 @@ form{
   font-size: 2.5rem; /* Tăng kích thước tiêu đề */
   margin-bottom: 10px; /* Khoảng cách giữa tiêu đề và nút */
   position: absolute;
-  top: 60px;
+  top: 52px;
 }
 
 /* Choices grid layout */
