@@ -103,8 +103,7 @@ const alternateQuestions1 = [
   },
   {
     question:
-      "How did the aftermath of WW1 cause the rise of communism as a result of the russian revolution, the treaty of versailles, the rise of nazism, and worldwide depression?
-",
+      "How did the aftermath of WW1 cause the rise of communism as a result of the russian revolution, the treaty of versailles, the rise of nazism, and worldwide depression?",
     choices: [
       "The aftermath of WWI caused communism to rise because the Treaty of Versailles gave Russia more power and territory, which led to greater stability.",
       "Russia became communist, Germany suffered after WWI, and economic troubles led to the rise of Nazis. The Great Depression made communism more appealing.",
@@ -234,6 +233,9 @@ function loadRandomQuestion1() {
     correct.style.display = "none";
     wrong.style.display = "none";
     explain1.innerHTML = "explanantion";
+    if(quizT.textContent === "Questions Completed!"){
+      quizT.style.top = "65px";
+    }
     return;
   }
 
@@ -316,9 +318,9 @@ function loadRandomQuestion1() {
     secret.style.display = "none";
     setTimeout(() => {
       if(scoreValue === 1000) {
-                quizT1.textContent = "You score a total of 900 points! You Won the game!"
+                quizT1.textContent = "You score a total of 1000 points! You Won the game!";
               } else if (scoreValue >= 1000){
-                quizT1.textContent = "You score over 900 points! You Won the game!"
+                quizT1.textContent = "You score over 1000 points! You Won the game!";
               }
       quizT1.style.display = "block";
       quizt2.style.display = "none";
@@ -358,6 +360,9 @@ function loadRandom1Question1() {
     correct.style.display = "none";
     wrong.style.display = "none";
     explain1.innerHTML = "explanation";
+    if(quizT.textContent === "Questions Completed!"){
+      quizT.style.top = "65px";
+    }
     return;
   }
 
@@ -438,9 +443,9 @@ function loadRandom1Question1() {
     secret.style.display = "none";
     setTimeout(() => {
       if(scoreValue === 1000) {
-                quizT1.textContent = "You score a total of 900 points! You Won the game!"
+                quizT1.textContent = "You score a total of 1000 points! You Won the game!";
               } else if (scoreValue >= 1000){
-                quizT1.textContent = "You score over 900 points! You Won the game!"
+                quizT1.textContent = "You score over 1000 points! You Won the game!";
               }
       quizT1.style.display = "block";
       quizt2.style.display = "none";
@@ -480,6 +485,9 @@ function loadRandom1Question3() {
     correct.style.display = "none";
     wrong.style.display = "none";
     explain1.innerHTML = "explanation";
+    if(quizT.textContent === "Questions Completed!"){
+      quizT.style.top = "65px";
+    }
     return;
   }
 
@@ -565,9 +573,9 @@ function loadRandom1Question3() {
     secret.style.display = "none";
     setTimeout(() => {
       if(scoreValue === 1000) {
-                quizT1.textContent = "You score a total of 900 points! You Won the game!"
+                quizT1.textContent = "You score a total of 1000 points! You Won the game!";
               } else if (scoreValue >= 1000){
-                quizT1.textContent = "You score over 900 points! You Won the game!"
+                quizT1.textContent = "You score over 1000 points! You Won the game!";
               }
       quizT1.style.display = "block";
       quizt2.style.display = "none";
@@ -799,8 +807,6 @@ sh1.addEventListener("click", show1That); // Bộ câu hỏi alternateQuestions1
 th1.addEventListener("click", show1It1); // Bộ câu hỏi thirdQuestions1
 
 loading.style.display = "block";
-
-
 
 questions1.addEventListener("click", function() {
 window.history.pushState(null, "European Union Geography/History", "/Eu-geography-history");
