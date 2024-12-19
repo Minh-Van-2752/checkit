@@ -142,6 +142,19 @@ const thirdQuestions1 = [
     explanation:
       "Investing in education and goods can grow the economy in my Europe.",
   },
+  {
+    question:
+      "How did the propaganda and the rise of Nazism lead to the Holocaust?",
+    choices: [
+      "Propaganda and the rise of Nazism manipulated public perception, fostering deep-seated hatred that facilitated the acceptance and execution of the Holocaust.",
+      "Nazi propaganda spread fear and hatred by portraying Jews as dangerous enemies, which made the public more accepting of their persecution during the Holocaust.",
+      "By using propaganda to falsely link Jews with Germany’s failures, the Nazis were able to rally widespread support for their brutal actions that led to the Holocaust.",
+      "The nazi propaganda spread hate leading to the Holocaust.",
+    ],
+    correct: 3,
+    explanation:
+      "Nazi propaganda spread hate by portraying Jews as enemies of the state. This fueled public support for the violence and policies that led to the Holocaust.",
+  },
 ];
 
 const fourthQuestions1 = [
@@ -556,7 +569,7 @@ function loadRandom1Question3() {
         }
 
         if (getComputedStyle(h1r6).display === "block") {
-          scoreValue += 150;
+          scoreValue += 100;
           score.textContent = `Score: ${scoreValue}`;
         }
 
