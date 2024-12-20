@@ -667,3 +667,7 @@ explain2.addEventListener("click", function() {
   window.location.href = "/";
   }
 });
+
+questions2.addEventListener("click", function(event){
+  event.preventDefault();
+}
