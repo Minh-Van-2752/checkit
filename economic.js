@@ -659,13 +659,16 @@ sh2.addEventListener("click", show2That); // Bộ câu hỏi alternateQuestions2
 th2.addEventListener("click", show2It1); // Bộ câu hỏi thirdQuestions2
 
 questions2.addEventListener("click", function(event) {
-  window.location.href = "/eu-economic";
-  event.preventDefault();
+  event.preventDefault(); // Prevents the default navigation behavior
+  window.location.href = "/eu-economic"; // Then redirects
 });
 
-explain2.addEventListener("click", function() {
-  if(questions2.style.display === "block"){
-  window.location.href = "/";
+
+explain2.addEventListener("click", function(event) {
+  if (questions2.style.display === "block") {
+    event.preventDefault(); // Optional, ensures no default behavior happens
+    window.location.href = "/";
   }
 });
+
 
