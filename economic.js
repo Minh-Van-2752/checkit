@@ -659,11 +659,11 @@ sh2.addEventListener("click", show2That); // Bộ câu hỏi alternateQuestions2
 th2.addEventListener("click", show2It1); // Bộ câu hỏi thirdQuestions2
 
 questions2.addEventListener("click", function() {
-window.history.pushState(null, "European Union Economic", "/eu-economic");
+  window.location.href = "/eu-economic";
 });
 
 explain2.addEventListener("click", function() {
   if(questions2.style.display === "block"){
-  window.history.pushState(null, "/", "/");
+  window.location.href = "/";
   }
 });
