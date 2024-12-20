@@ -658,8 +658,9 @@ oh2.addEventListener("click", show2It); // Bộ câu hỏi mặc định
 sh2.addEventListener("click", show2That); // Bộ câu hỏi alternateQuestions2
 th2.addEventListener("click", show2It1); // Bộ câu hỏi thirdQuestions2
 
-questions2.addEventListener("click", function() {
+questions2.addEventListener("click", function(event) {
   window.location.href = "/eu-economic";
+  event.preventDefault();
 });
 
 explain2.addEventListener("click", function() {
@@ -668,6 +669,3 @@ explain2.addEventListener("click", function() {
   }
 });
 
-questions2.addEventListener("click", function(event){
-  event.preventDefault();
-}
